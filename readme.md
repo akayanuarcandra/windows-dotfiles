@@ -4,11 +4,11 @@ soo what's actually dotfiles? i don't know but here's the configs and screenshot
 Also these configs are incredibly messy since i don't have much time to clean up unused things
 ## Windows
 ### Rosé Pine
-![Windows Config](/Images/take-1.png)
+![Windows Config](/Windows/Images/take-1.png)
 
 The wallpaper that i'm using are made by [おむたつ](https://x.com/omrice4869)!
 
-![Windows Wallpaper](/Images/take-1-desktop.png)
+![Windows Wallpaper](/Windows/Images/take-1-desktop.png)
 
 List of the apps that i used to make this happens!
 * Window Manager - [GlazeWM](https://github.com/glzr-io/glazewm)
