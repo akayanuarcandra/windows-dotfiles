@@ -17,5 +17,6 @@ List of the apps that i used to make this happens!
 * Terminal - [nushell](https://www.nushell.sh/)
 * Discord ([Vesktop](https://github.com/Vencord/Vesktop)) - [System24](https://github.com/refact0r/system24) (with slight modification)
 * App Launcher - [PowerToys](https://learn.microsoft.com/en-us/windows/powertoys/)
+* Miku in the Corner - [Desktop Mate](https://store.steampowered.com/app/3301060/Desktop_Mate/)
 ## Linux
 Coming Soon!
