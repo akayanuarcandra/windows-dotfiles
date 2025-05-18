@@ -2,7 +2,7 @@ general:
   # Commands to run when the WM has started. This is useful for running a
   # script or launching another application.
   # Example: The below command launches Zebar.
-  # startup_commands: ['shell-exec zebar']
+  startup_commands: ['start C:\Users\aru\AppData\Local\Programs\Python\Python313\pythonw.exe D:/script/autoTiling/main.py']
 
   # Commands to run just before the WM is shutdown.
   # Example: The below command kills Zebar.
@@ -25,7 +25,7 @@ general:
     # Trigger for cursor jump:
     # - 'monitor_focus': Jump when focus changes between monitors.
     # - 'window_focus': Jump when focus changes between windows.
-    trigger: 'monitor_focus'
+    trigger: 'window_focus'
 
   # How windows should be hidden when switching workspaces.
   # - 'cloak': Recommended. Hides windows with no animation.
@@ -122,14 +122,25 @@ window_behavior:
 
 workspaces:
   - name: '1'
+    bind_to_monitor: 0
   - name: '2'
+    bind_to_monitor: 0
   - name: '3'
+    bind_to_monitor: 0
   - name: '4'
+    bind_to_monitor: 0
   - name: '5'
+    bind_to_monitor: 0
   - name: '6'
+    bind_to_monitor: 1
   - name: '7'
+    bind_to_monitor: 1
   - name: '8'
+    bind_to_monitor: 1
   - name: '9'
+    bind_to_monitor: 1
+  - name: '10'
+    bind_to_monitor: 1
 
 window_rules:
   - commands: ['ignore']
@@ -150,7 +161,8 @@ window_rules:
         window_class: { regex: 'HwndWrapper' }
 
       - window_process: { equals: 'DesktopMate' }
-
+      - window_title: { equals: 'Armoury Crate' }
+      
 binding_modes:
   # When enabled, the focused window can be resized via arrow keys or HJKL.
   - name: 'resize'
@@ -285,6 +297,8 @@ keybindings:
     bindings: ['alt+8']
   - commands: ['focus --workspace 9']
     bindings: ['alt+9']
+  - commands: ['focus --workspace 10']
+    bindings: ['alt+0']
 
   # Move the focused window's parent workspace to a monitor in a given
   # direction.
@@ -316,3 +330,5 @@ keybindings:
     bindings: ['alt+shift+8']
   - commands: ['move --workspace 9', 'focus --workspace 9']
     bindings: ['alt+shift+9']
+  - commands: ['move --workspace 10', 'focus --workspace 10']
+    bindings: ['alt+shift+0']

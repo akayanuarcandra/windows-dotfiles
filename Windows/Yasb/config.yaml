@@ -41,16 +41,17 @@ bars:
         "home",
         "battery",
         "wifi",
+        "volume",
         "memory",
         "cpu",
-        "volume",
         "glazewm_tiling_direction",
         "systray"
-        # "komorebi_workspaces",
-        # "komorebi_active_layout",
       ]
       center: [
-        "active_window"
+        "active_window",
+        "glazewm_workspaces"
+        # "komorebi_workspaces",
+        # "komorebi_active_layout"
       ]
       right: [
         "media",
@@ -169,8 +170,8 @@ widgets:
   volume:
     type: "yasb.volume.VolumeWidget"
     options:
-      label: "<span>{icon}</span> {level}"
-      label_alt: "{volume}"
+      label: "<span>{icon}</span>"
+      label_alt: "<span>{icon}</span> {level}"
       tooltip: false
       volume_icons:
         - "\ueee8"
@@ -181,6 +182,7 @@ widgets:
       callbacks:
         on_left: "toggle_mute"
         on_right: "exec cmd.exe /c start ms-settings:sound"
+        on_middle: "toggle_label"
   microphone:
     type: "yasb.microphone.MicrophoneWidget"
     options:
@@ -268,8 +270,8 @@ widgets:
   battery:
     type: "yasb.battery.BatteryWidget"
     options:
-      label: "<span>{icon}</span>{percent}%"
-      label_alt: "{icon} {percent}% | time: {time_remaining}"
+      label: "<span>{icon}</span>"
+      label_alt: "<span>{icon}</span>{percent}%"
       charging_options:
         icon_format: "{charging_icon}"
       label_shadow:
@@ -280,8 +282,8 @@ widgets:
   wifi:
     type: "yasb.wifi.WifiWidget"
     options:
-      label: "<span>{wifi_icon}</span>{wifi_name}"
-      label_alt: "<span>{wifi_icon}</span>{wifi_name} {wifi_strength}%"
+      label: "<span>{wifi_icon}</span>"
+      label_alt: "<span>{wifi_icon}</span>{wifi_name}"
       update_interval: 5000
       callbacks:
         on_left: "toggle_label"
@@ -336,3 +338,27 @@ widgets:
         color: "black"
         radius: 3
         offset: [ 1, 1 ]
+  glazewm_workspaces:
+    type: "glazewm.workspaces.GlazewmWorkspacesWidget"
+    options:
+      offline_label: "GlazeWM Offline"
+      hide_empty_workspaces: false
+      hide_if_offline: false
+      btn_shadow:
+        enabled: true
+        color: "black"
+        radius: 3
+        offset: [ 1, 1 ]
+      # container_padding: 
+      #   top: 0
+      #   left: 4
+      #   bottom: 0
+      #   right: 4
+
+      # By default workspace names are fetched from GlazeWM and "display_name" option takes priority over "name".
+      # However, you can customize populated and empty labels here using {name} and {display_name} placeholders if needed.
+      # {name} will be replaced with workspace name (index) from GlazeWM.
+      # {display_name} will be replaced with workspace display_name from GlazeWM.
+
+      # populated_label: "{name} {display_name} \uebb4"
+      # empty_label: "{name} {display_name} \uebb5"

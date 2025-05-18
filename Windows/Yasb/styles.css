@@ -22,6 +22,7 @@ For more information about configuration options, please visit the Wiki https://
     --base: #1e1e2e;
     --crust: #1f1d2e;
 }
+
 /* Global styles for ToolTip */
 QToolTip {
     padding: 6px;
@@ -31,6 +32,7 @@ QToolTip {
     border: 0px solid #313244;
     border-radius: 6px;
 }
+
 * {
     font-size: 12px;
     color: var(--cream);
@@ -39,6 +41,7 @@ QToolTip {
     margin: 0;
     padding: 0;
 }
+
 .yasb-bar {
     padding: 0;
     margin: 0;
@@ -46,87 +49,89 @@ QToolTip {
     border-radius: 8px;
     border: 1px solid #313244;
 }
+
 .widget {
     padding: 0 12px;
     margin: 0;
 }
+
 .icon {
     font-size: 16px;
 }
+
 .widget .label {
     padding: 0px 2px;
 }
+
 .komorebi-active-layout {
     padding: 0 4px 0 0;
 }
+
 .komorebi-active-layout .label {
     font-weight: 600;
     padding: 2px 0 0 0;
 }
+
 .apps-widget .widget-container,
 .komorebi-workspaces .widget-container,
 .komorebi-active-layout .widget-container {
     background-color: var(--crust);
     margin: 3px 0 3px 0;
     border-radius: 12px;
-    border: 1px solid var(--surface0);
+    /* border: 1px solid var(--surface0); */
 }
+
 .komorebi-workspaces .widget-container {
     border-top-left-radius: 6px;
     border-bottom-left-radius: 6px;
     margin-left: 4px;
 }
+
 .komorebi-workspaces {
     border-top-right-radius: 14px;
     border-bottom-right-radius: 14px;
     padding: 0 4px 0 0;
 }
+
 .komorebi-workspaces .offline-status {
     color: var(--surface2);
     font-size: 12px;
     padding: 0 0 0 4px;
     font-weight: 600;
 }
+
 .komorebi-workspaces .ws-btn {
     border: none;
     background-color: transparent;
     margin: 0;
     font-size: 12px;
-    color: var(--overlay1);
+    color: var(--cream);
     height: 28px;
     width: 18px;
 }
+
 .komorebi-workspaces .ws-btn:hover {
-    color: var(--subtext1);
+    color: var(--purple);
 }
+
 .komorebi-workspaces .ws-btn.populated {
     color: transparent;
     width: 10px;
     height: 10px;
-    background-color: var(--purple);
-    border-radius: 5px;
+    background-color: var(--cream);
+    border-radius: 2px;
     margin: 0 4px;
     font-size: 1px;
 }
+
 .komorebi-workspaces .ws-btn.active {
     color: transparent;
-    background-color: var(--blue);
-    width: 36px;
-    max-width: 36px;
+    background-color: var(--purple);
+    width: 10px;
+    max-width: 10px;
     height: 10px;
     margin: 0 4px;
-    border-radius: 5px;
-}
-.apps-widget {
-    padding: 0 4px 0 2px;
-}
-.apps-widget .label {
-    font-size: 14px;
-    padding: 0 2px;
-    color: var(--cream);
-}
-.apps-widget .label:hover {
-    color: var(--text);
+    border-radius: 2px;
 }
 
 .power-menu-widget .label {
@@ -134,9 +139,11 @@ QToolTip {
     font-size: 13px;
     margin-bottom: 2px;
 }
+
 .power-menu-popup {
     background-color: transparent
 }
+
 .power-menu-popup .button {
     padding: 0;
     width: 180px;
@@ -150,6 +157,7 @@ QToolTip {
     border-bottom: 4px solid rgba(58, 59, 83, 0);
     margin: 0px;
 }
+
 .power-menu-popup .button.hover {
     background-color: var(--base);
     border-left: 4px solid var(--base);
@@ -189,15 +197,8 @@ QToolTip {
     margin: 0px 4px 0 0;
 }
 
-.weather-widget,
 .volume-widget {
-    padding: 0 8px;
-}
-
-.weather-widget .icon {
-    font-size: 18px;
-    margin: 0 2px 1px 0;
-    color: var(--purple);
+    padding: 0 4px;
 }
 
 .media-widget {
@@ -218,6 +219,7 @@ QToolTip {
     margin: 0;
     font-family: Segoe Fluent Icons;
     font-weight: 400;
+    font-size: 10px;
 }
 
 .media-widget .btn:hover {
@@ -225,12 +227,12 @@ QToolTip {
 }
 
 .media-widget .btn.play {
-    font-size: 16px;
+    font-size: 14px;
 }
 .media-widget .btn.disabled:hover,
 .media-widget .btn.disabled {
     color: #4e525c;
-    font-size: 12px;
+    font-size: 10x;
     background-color: rgba(0, 0, 0, 0);
 }
 
@@ -262,6 +264,7 @@ QToolTip {
     background-color: rgba(128, 130, 158, 0.15);
     color: #fff;
 }
+
 /* .home-menu .separator {
     max-height: 1px;
     background-color: rgba(128, 130, 158, 0.3);
@@ -300,7 +303,7 @@ QToolTip {
 }
 
 .wifi-widget{
-    padding: 0 4px;
+    padding: 0 1px;
 }
 
 .wifi-widget .icon{
@@ -310,7 +313,7 @@ QToolTip {
 }
 
 .battery-widget{
-    padding: 0 4px 0 2px;
+    padding: 0 1px;
 }
 
 .battery-widget .icon{
@@ -328,7 +331,7 @@ QToolTip {
 .glazewm-tiling-direction .btn {
     font-size: 18px;
     width: 14px;
-    padding: 0 12px 0 4px;
+    padding: 0 2px 0 4px;
     color: var(--cream);
     border: none;
 }
@@ -340,7 +343,7 @@ QToolTip {
 .systray {
     background: transparent;
     border: None;
-    margin: 0 -16px;
+    margin: 0 -8px;
 }
 
 .systray .unpinned-container {
@@ -382,4 +385,53 @@ QToolTip {
 
 .clock-widget {
     margin: 0 -8px 0 -4px;
+}
+
+.glazewm-workspaces {
+    margin: 0 0px 0 -4px;
+}
+
+
+.glazewm-workspaces .ws-btn.active {
+    color: var(--purple);
+    background-color: var(--cream);
+    border: 1px solid var(--cream);
+}
+
+.glazewm-workspaces .ws-btn.active_empty {
+    color: var(--purple);
+    background-color: transparent;
+    border: 1px solid var(--purple);
+}
+
+.glazewm-workspaces .ws-btn.populated {
+    color: transparent;
+    background-color: transparent;
+    border: 1px solid var(--purple);
+}
+
+.glazewm-workspaces .ws-btn.empty {
+    color: transparent;
+    border: 1px solid var(--purple);
+}
+
+.glazewm-workspaces .ws-btn {
+    font-size: 14px;
+    height: 9px;
+    width: 2px;
+    border-radius: 2px;
+    padding: 0px 4px 0px 4px;
+    margin: 0 1px;
+    color:transparent;
+}
+
+.glazewm-workspaces .ws-btn:hover,
+.glazewm-workspaces .ws-btn.populated:hover,
+.glazewm-workspaces .ws-btn.empty:hover {
+    background-color: var(--cream);
+    border: 1px solid var(--cream);
+}
+
+.active-window-widget {
+    padding: 0 0px;
 }

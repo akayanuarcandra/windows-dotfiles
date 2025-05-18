@@ -87,20 +87,20 @@ body {
 
     /* text colors */
     --text-0: var(--bg-4); /* text on colored elements */
-    --text-1: oklch(95% 20% 320); /* other normally white text */
-    --text-2: oklch(85% 20% 320); /* headings and important text */
+    --text-1: oklch(95% 20% 290); /* other normally white text */
+    --text-2: oklch(85% 20% 290); /* headings and important text */
     --text-3: var(--cream-1); /* normal text */
-    --text-4: oklch(54% 15% 320); /* icon buttons and channels */
-    --text-5: oklch(40% 5% 320); /* muted channels/chats and timestamps */
+    --text-4: oklch(54% 15% 290); /* icon buttons and channels */
+    --text-5: oklch(40% 5% 290); /* muted channels/chats and timestamps */
 
     /* background and dark colors */
     --bg-1: #191724; /* dark buttons when clicked */
     --bg-2: #222031; /* dark buttons */
     --bg-3: #191724; /* spacing, secondary elements */
     --bg-4: #191724; /* main background color */
-    --hover: oklch(54% 20% 320 / 0.1); /* channels and buttons when hovered */
-    --active: oklch(40% --green-5 320 / 0.3); /* channels and buttons when clicked or selected */
-    --active-2: oklch(54% 20% 320 / 0.3); /* extra state for transparent buttons */
+    --hover: oklch(54% 20% 290 / 0.1); /* channels and buttons when hovered */
+    --active: oklch(40% 15% 290 / 0.3); /* channels and buttons when clicked or selected */
+    --active-2: oklch(54% 20% 290 / 0.3); /* extra state for transparent buttons */
     --message-hover: var(--bg-2); /* messages when hovered */
 
     /* accent colors */
