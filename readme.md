@@ -3,11 +3,11 @@ this is my personal dotfiles for windows customisation, some things are broken b
 
 Also these configs are incredibly messy since i don't have much time to clean up unused things
 ### Rosé Pine
-![Windows Config](/Windows/Images/take-1.png)
+![Windows Config](/Images/take-1.png)
 
 The wallpaper that i'm using are made by [おむたつ](https://x.com/omrice4869)!
 
-![Windows Wallpaper](/Windows/Images/take-1-desktop.png)
+![Windows Wallpaper](/Images/take-1-desktop.png)
 
 List of the apps that i used to make this happens!
 * Window Manager - [GlazeWM](https://github.com/glzr-io/glazewm)
