@@ -1,8 +1,7 @@
-# aru's Dotfiles
-soo what's actually dotfiles? i don't know but here's the configs and screenshots of my current workspace, for now i only config for windows (since i don't like how a default windows looks like) but later might be linux ¯\\\_(ツ)_/¯ 
+# aru's Windows Dotfiles
+this is my personal dotfiles for windows customisation, some things are broken because, well, windows, and my workstation isn't actually that strong enough to handle many things. also my [linux](https://github.com/akayanuarcandra/windows-dotfiles?tab=readme-ov-file#linux) dotfiles finally ready! go check it out!
 
 Also these configs are incredibly messy since i don't have much time to clean up unused things
-## Windows
 ### Rosé Pine
 ![Windows Config](/Windows/Images/take-1.png)
 
@@ -19,4 +18,4 @@ List of the apps that i used to make this happens!
 * App Launcher - [PowerToys](https://learn.microsoft.com/en-us/windows/powertoys/)
 * Miku in the Corner - [Desktop Mate](https://store.steampowered.com/app/3301060/Desktop_Mate/)
 ## Linux
-Coming Soon!
+apparently i forgor to fix some things, but it's just a simple thing sooo i'll fix later, anyway here's the [dotfiles](https://github.com/akayanuarcandra/linux-dotfiles)
