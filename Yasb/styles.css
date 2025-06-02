@@ -391,28 +391,28 @@ QToolTip {
     margin: 0 0px 0 -4px;
 }
 
-
 .glazewm-workspaces .ws-btn.active {
-    color: var(--purple);
+    color: transparent;
+    background-color: var(--purple);
+    border: 1px solid var(--purple);
+}
+
+.glazewm-workspaces .ws-btn.active_empty{
+    color: transparent;
     background-color: var(--cream);
     border: 1px solid var(--cream);
 }
 
-.glazewm-workspaces .ws-btn.active_empty {
-    color: var(--purple);
-    background-color: transparent;
-    border: 1px solid var(--purple);
-}
-
 .glazewm-workspaces .ws-btn.populated {
     color: transparent;
-    background-color: transparent;
-    border: 1px solid var(--purple);
+    background-color: var(--cream);
+    border: 1px solid var(--cream);
 }
 
 .glazewm-workspaces .ws-btn.empty {
     color: transparent;
-    border: 1px solid var(--purple);
+    background-color: var(--cream);
+    border: 1px solid var(--cream);
 }
 
 .glazewm-workspaces .ws-btn {
